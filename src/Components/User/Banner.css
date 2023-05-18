@@ -1,0 +1,11 @@
+@media (max-width: 768px) {
+  .image-container {
+    margin-top: 10%;
+  }
+}
+
+@media (max-width: 375px) {
+  .image-container {
+    margin-top: 20%;
+  }
+}

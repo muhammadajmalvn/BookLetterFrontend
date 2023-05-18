@@ -1,0 +1,53 @@
+/* For screens smaller than 768px (e.g. smartphones) */
+@media (max-width: 767px) {
+    .container {
+        width: 100%;
+    }
+}
+
+/* For screens between 768px and 992px (e.g. tablets) */
+@media (min-width: 768px) and (max-width: 991px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    form {
+        width: 100%;
+        max-width: 400px;
+    }
+
+    .card {
+        width: 100%;
+        max-width: 800px;
+        margin: 0 auto;
+    }
+}
+
+/* For screens larger than 992px (e.g. desktops) */
+@media (min-width: 992px) {
+    .container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 2rem;
+        justify-items: center;
+    }
+
+    form {
+        width: 100%;
+        max-width: 400px;
+    }
+
+    .card {
+        max-width: 800px;
+        margin: 0 auto;
+    }
+}
+.loading-container {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
